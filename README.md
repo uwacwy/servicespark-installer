@@ -9,10 +9,19 @@ This script will install ServiceSpark to a directory.
 
 # Step 1
 Run this command in an empty directory
-`git clone https://github.com/uwacwy/servicespark-installer.git; cd servicespark-installer; ./install.sh `
+
+## If you have super powers
+`git clone https://github.com/uwacwy/servicespark-installer.git .; sudo ./install.sh`
+
+## If you don't have super powers
+```bash
+git clone https://github.com/uwacwy/servicespark-installer.git .; ./install.sh
+chown <your username>:<your webserver user> servicespark/app/tmp/
+chmod -R 775 servicespark/app/tmp/
+```
 
 # Step 2
-Replace your http root directory with the contents of `servicespark`
+Replace the contents of your root web directory with the contents of `servicespark`
 
 # Step 3 (optional)
 If you get file permission errors when you try to load your site, run the following commands.  (you will need super powers)
