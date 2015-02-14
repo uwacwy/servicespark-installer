@@ -1,0 +1,11 @@
+/*
+	ServiceSpark configuration
+*/
+
+CakePlugin::load('BoostCake');
+CakePlugin::load('Mandrill');
+CakePlugin::load('PHPExcel');
+
+Configure::write('Solution.name','My Service Site');
+Configure::write('Solution.description','makes your community better by helping you volunteer doing things you love.');
+Configure::write('Google.maps.api_key', '---your---google---maps---api---key---here');
